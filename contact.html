@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Buffet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo Star Buffet" style="width: 8rem;">
+            </a>
+
+            <!-- Bouton hamburger (mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <!-- Liens -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cours de Cuisine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traiteurs.html">Traiteurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Boutons -->
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn">Connexion</a>
+                    <a href="#" class="btn btn-primary">Inscription</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section>
+
+        <!-- contact form -->
+        <div class="bg-contact">
+            <div class="container py-5 mx-auto w-100" style="max-width: 900px;">
+
+                <h1 class="mt-2 text-primary text-center fw-bold">Contactez-nous</h1>
+                <p class="text-center">Nous sommes là pour vous aider. N'hésitez pas à nous contacter. pour toute
+                    question
+                    ou suggestion.</p>
+
+                <div class="bg-white mt-5 rounded-3 shadow-sm p-4">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <label class="form-label">Prénom</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label class="form-label">Numéro de téléphone</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-regular fa-envelope"></i>
+                                Envoyer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="container py-5">
+            <div class="row text-center gy-4">
+
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <div
+                        class="card border-0 bg-contact p-4 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <span class="icone-circle mb-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <h5 class="text-primary fw-bold">Téléphone</h5>
+                        <p>+221 XX XXX XX XX</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <div
+                        class="card border-0 bg-contact p-4 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <span class="icone-circle mb-3">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <h5 class="text-primary fw-bold">Email</h5>
+                        <p>contact@startbuffet.sn</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <div
+                        class="card border-0 bg-contact p-4 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <span class="icone-circle mb-3">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <h5 class="text-primary fw-bold">Adresse</h5>
+                        <p>Dakar, Sénégal</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-light py-4 pt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">A Propos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Qui sommes-nous</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">Mentions légales</a></li>
+                        <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="traiteurs.html" class="footer-link">Traiteurs</a></li>
+                            <li><a href="#" class="footer-link">Restaurants</a></li>
+                            <li><a href="#" class="footer-link">Cours de cuisine</a></li>
+                        </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">Espace pro</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="traiteurs.html" class="footer-link">Devenir partenaire</a></li>
+                            <li><a href="login.html" class="footer-link">Connexion</a></li>
+                            <li><a href="#" class="footer-link">FAQ Professionnels</a></li>
+                        </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">Contact</h5>
+                    <p>Start Buffet</p>
+                    <p>Dakar, Sénégal</p>
+                    <p>Tél : +221 77 000 00 00</p>
+                    <p>Email : contact@startbuffet.com</p>
+                    <p>
+                        <a href="#" class="text-light me-2">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light me-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-12 text-center mt-3 mt-md-0">
+                    <div class="border-top mb-4"></div>
+                    <p class="">&copy; 2026 StartBuffet. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

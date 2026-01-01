@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Buffet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-md bg-white shadow-sm sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo Star Buffet" style="width: 8rem;">
+            </a>
+
+            <!-- Bouton hamburger (mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <!-- Liens -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cours de Cuisine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traiteurs.html">Traiteurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Boutons -->
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn">Connexion</a>
+                    <a href="#" class="btn btn-primary">Inscription</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="overlay"></div>
+
+        <div class="container py-5 contenu">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-start mb-4 mb-md-0">
+                    <h1 class="fw-bold">
+                        Découvrez <span class="text-secondary">la cuisine sénégalaise</span>
+                    </h1>
+                    <p class="lead fs-5">Explorez les saveurs authentiques du Sénégal. Du Thiéboudienne au Alloco, apprenez les secrets de la cuisine sénégalaise avec nos chefs experts.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <img src="images/thieboudieunerouge.JPG" alt="Banner" class="image-banner">
+                    <span class="img-badge">
+                        <i class="fa-solid fa-mug-saucer"></i> Cours disponibles
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-light py-4 pt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">A Propos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Qui sommes-nous</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">Mentions légales</a></li>
+                        <li><a href="#" class="footer-link">Politique de confidentialité</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="traiteurs.html" class="footer-link">Traiteurs</a></li>
+                            <li><a href="#" class="footer-link">Restaurants</a></li>
+                            <li><a href="#" class="footer-link">Cours de cuisine</a></li>
+                        </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">Espace pro</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="traiteurs.html" class="footer-link">Devenir partenaire</a></li>
+                            <li><a href="login.html" class="footer-link">Connexion</a></li>
+                            <li><a href="#" class="footer-link">FAQ Professionnels</a></li>
+                        </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-4">Contact</h5>
+                    <p>Start Buffet</p>
+                    <p>Dakar, Sénégal</p>
+                    <p>Tél : +221 77 000 00 00</p>
+                    <p>Email : contact@startbuffet.com</p>
+                    <p>
+                        <a href="#" class="text-light me-2">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light me-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-12 text-center mt-3 mt-md-0">
+                    <div class="border-top mb-4"></div>
+                    <p class="">&copy; 2026 StartBuffet. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
