@@ -20,7 +20,7 @@
 
 <body>
     <!-- menu -->
-    <nav class="navbar navbar-expand-md bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
 
             <!-- Logo -->
@@ -40,7 +40,7 @@
                 <!-- Liens -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Accueil</a>
+                        <a class="nav-link" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Restaurants</a>
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="#">Cours de Cuisine</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="traiteurs.html">Traiteurs</a>
+                        <a class="nav-link active" href="traiteurs.html">Traiteurs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -68,12 +68,11 @@
 
     <!-- Banner -->
     <section class="banner-traiteur">
-
         <div class="container py-5">
             <div class="row d-flex align-items-center justify-content-center mt-5">
                 <div class="col-12 col-md-9 text-start text-white mb-md-0">
-                    <h1 class="fw-bold lh-sm">
-                        Nos Traiteur
+                    <h1 class="fw-bold">
+                        Nos Traiteurs
                     </h1>
                     <p class="small">
                         Découvrez nos traiteurs professionnels pour vos événements, mariages, baptêmes et receptions.
@@ -81,12 +80,160 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Triateurs -->
-    <section>
-        <br>
+    <section class="traiteur">
+        <div class="container py-5">
+            <!-- Filtres -->
+            <div class="row">
+                <div class="col-12 col-md-2 text-start text-md-center mb-md-0 d-flex align-items-end">
+                    <h2 class="fw-bold">Filtre</h2>
+                </div>
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <label class="form-label">Spécialité</label>
+                    <select class="form-select">
+                        <option value="">Toutes les Spécialités</option>
+                        <option value="française">Française</option>
+                        <option value="indiennne">Indiennne</option>
+                        <option value="japonaise">Japonaise</option>
+                        <option value="senegalaise">Sénégalaise</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <label class="form-label">Statut</label>
+                    <select class="form-select">
+                        <option value="">Tous les traiteurs</option>
+                        <option value="traiteurs1">Traiteurs 1</option>
+                        <option value="traiteurs2">Traiteurs 2</option>
+                        <option value="traiteurs3">Traiteurs 3</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex align-items-end gap-2">
+
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa-solid fa-search"></i>
+                        Filtre
+                    </a>
+                    <a href="#" class="btn btn-light">
+                        <i class="fa-solid fa-refresh"></i>
+                        Réinitialiser
+                    </a>
+                </div>
+            </div>
+
+            <!-- Résultat filtres -->
+            <div class="row mt-5">
+                <div class="col-12 mb-4">
+                    <div class="card border-0 box-shadow">
+
+                        <!-- Flex principal -->
+                        <div class="d-flex flex-column flex-md-row gap-4 align-items-start align-items-md-center">
+
+                            <!-- IMAGE -->
+                            <div class="card-image flex-shrink-0">
+                                <img src="images/cocombre.jpg" alt="image filtre" class="rounded">
+                                <span class="badge-image">
+                                    <i class="fa-solid fa-circle-check"></i> Vérifié
+                                </span>
+                            </div>
+
+                            <!-- CONTENU CENTRAL -->
+                            <div class="card-content flex-grow-1 p-3">
+                                <p class="text-muted mb-2">
+                                    <i class="fa-solid fa-circle small me-2"></i>
+                                    1979 ans d’expérience
+                                </p>
+
+                                <p class="mb-1">Lorem ipsum dolor sit.</p>
+
+                                <p class="fw-bold mb-2">Spécialités :</p>
+
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="badge bg-light text-dark">Française</span>
+                                    <span class="badge bg-light text-dark">Indienne</span>
+                                </div>
+
+                                <p class="text-muted">
+                                    <i class="fa-solid fa-phone me-2"></i>
+                                    +1 (684) 758-7777
+                                </p>
+                            </div>
+
+                            <!-- PARTIE DROITE -->
+                            <div class="card-right p-3 d-flex flex-md-column flex-row justify-content-between h-100 text-md-end">
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <strong>0.0</strong>
+                                </div>
+                                <div class="mx-5 mx-md-0">
+                                    <a href="detail-traiteur.html" class="btn btn-dark">
+                                        Voir le profil
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 box-shadow">
+
+                        <!-- Flex principal -->
+                        <div class="d-flex flex-column flex-md-row gap-4 align-items-start align-items-md-center">
+
+                            <!-- IMAGE -->
+                            <div class="card-image flex-shrink-0">
+                                <img src="images/thieboudieunerouge.JPG" alt="image filtre" class="rounded">
+                                <span class="badge-image">
+                                    <i class="fa-solid fa-circle-check"></i> Vérifié
+                                </span>
+                            </div>
+
+                            <!-- CONTENU CENTRAL -->
+                            <div class="card-content flex-grow-1 p-3">
+                                <p class="text-muted mb-2">
+                                    <i class="fa-solid fa-circle small me-2"></i>
+                                    2016 ans d'expérience
+                                </p>
+
+                                <p class="mb-1">Perspiciatis quia a.</p>
+
+                                <p class="fw-bold mb-2">Spécialités :</p>
+
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="badge bg-light text-dark">Japonaise</span>
+                                </div>
+
+                                <p class="text-muted">
+                                    <i class="fa-solid fa-phone me-2"></i>
+                                        +1 (481) 253-6005
+                                </p>
+                            </div>
+
+                            <!-- PARTIE DROITE -->
+                            <div class="card-right p-3 d-flex flex-md-column flex-row justify-content-between h-100 text-md-end">
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <strong>0.0</strong>
+                                </div>
+                                <div class="mx-5 mx-md-0">
+                                    <a href="detail-traiteur.html" class="btn btn-dark">
+                                        Voir le profil
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- CTA -->
@@ -97,7 +244,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-md-12 text-center mb-4 mb-md-0">
                     <h3 class="fw-bold">
-                       Vous êtes traiteur ?
+                        Vous êtes traiteur ?
                     </h3>
                     <p class="small">
                         Régoinez notre réseau et développez votre actvité évenementielle !
